@@ -1,0 +1,28 @@
+{
+  "name": "sigma-men-backend",
+  "version": "1.0.0",
+  "description": "backend for sigma men website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiofeuser/sigma-men-backend.git"
+  },
+  "keywords": [
+    "sigmamen",
+    "men",
+    "backend",
+    "express"
+  ],
+  "author": "caiofeuser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiofeuser/sigma-men-backend/issues"
+  },
+  "homepage": "https://github.com/caiofeuser/sigma-men-backend#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
