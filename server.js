@@ -1,10 +1,10 @@
 ﻿// fileName : server.js
 // Example using the http module
 import { createServer } from "http";
-import { Express } from "express";
-
+import express from "express";
 // Create an HTTP server
-const app = new Express();
+const app = express();
+
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
