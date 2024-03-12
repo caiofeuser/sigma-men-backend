@@ -1,5 +1,6 @@
 {
   "name": "sigma-men-backend",
+  "type": "module",
   "version": "1.0.0",
   "description": "backend for sigma men website",
   "main": "index.js",
