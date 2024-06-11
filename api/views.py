@@ -17,6 +17,7 @@ from . import models
 from rest_framework import viewsets
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+import datetime
 
 # import custumo user model
 from auth_api.models import CustomUserModel
@@ -209,7 +210,7 @@ class StripeOrdersView(APIView):
             for order in orders:
                 formated_orders.append({
                     'id': order.id,
-                    'date': order.created,
+                    'date': datetime.datetime.fromtimestamp(order.created).strftime('%Y-%m-%d %H:%M:%S'),
                     'status': order.payment_status,
                     'amount_total': order.amount_total,
                     'payment_status': order.payment_status,
